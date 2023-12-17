@@ -1,0 +1,64 @@
+"""https://www.youtube.com/watch?v=cPIxKT6li6o&embeds_referring_euri=https%3A%2F%2Fwww.codecademy.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.codecademy.com&source_ve_path=MjM4NTE&feature=emb_title"""
+from nile import get_distance, format_price, SHIPPING_PRICES
+from test import test_function
+
+
+first_coord  = (0, 1)
+second_coord = (2, 3)
+
+shipping_type = "Overnight"
+
+def calculate_shipping_cost(from_coords, to_coords, shipping_type): 
+  from_lat, from_long = first_coord
+  to_lat, to_long = second_coord
+
+
+  distance =  get_distance(*first_coord, *second_coord)
+
+  SHIPPING_PRICES[shipping_type]
+
+  price = distance * shipping_rate
+
+  return format_price(price)
+
+test_function(calculate_shipping_cost) 
+
+# Define calculate_driver_cost() here
+driver = "AVX", "ACC"
+def calculate_driver_cost(distance = "drivers"):
+  cheapest_driver  = None
+  cheapest_driver_price = None
+
+  driver_time = distance * driver.speed
+  price_for_driver = driver.salary * driver_time
+
+  if cheapest_driver == None:
+    cheapest_driver = driver
+  elif price_for_driver <= cheapest_driver_price:
+    cheapest_driver = driver
+    cheapest_driver_price = price_for_driver
+
+  for driver in drivers:
+    driver + driver
+
+  return cheapest_driver_price  , cheapest_driver
+print(driver)
+# Test the function by calling 
+# test_function(calculate_driver_cost)
+
+# Define calculate_money_made() here
+def calculate_money_made(**trips):
+  total_money_made = 0
+
+  for trip_id, trip in trips.items():
+    trip_id , trip = trips+1
+
+    trip_revenue = trip.cost - trip.driver.cost
+    total_money_made += trip_revenue
+
+  return total
+
+
+
+# Test the function by calling 
+test_function(calculate_money_made)
